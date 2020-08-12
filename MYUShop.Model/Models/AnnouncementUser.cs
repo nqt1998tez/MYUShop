@@ -14,7 +14,7 @@ namespace MYUShop.Model.Models
         [Column(Order = 2)]
         public string UserId { get; set; }
 
-        public bool HasRead { get; set; }
+        public bool? HasRead { get; set; }
 
         [ForeignKey("UserId")]
         public virtual AppUser AppUser { get; set; }
